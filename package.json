@@ -1,0 +1,24 @@
+{
+  "name": "ttvc",
+  "version": "1.0.0",
+  "description": "Get the total number of view counts for a given channel on youtube.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "yuki_snow1823",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuki-snow1823/ttvc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuki-snow1823/ttvc/issues"
+  },
+  "homepage": "https://github.com/yuki-snow1823/ttvc#readme"
+}
