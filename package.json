@@ -1,6 +1,6 @@
 {
   "name": "ttvc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get the total number of view counts for a given channel on youtube.",
   "bin": {
     "ttvc": "main.js"
