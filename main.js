@@ -19,7 +19,7 @@ https.get(URL, (res) => {
         res = JSON.parse(body);
         const totalViewCount = res.items[0].statistics.viewCount
         const channelName = res.items[0].snippet.title
-        const message = '今日までの「' + channelName + '」の総再生回数は' + totalViewCount + 'です。'
+        const message = `今日までの「${channelName }」の総再生回数は${totalViewCount}です。`
         console.log(message);
     })
 }).on('error', (e) => {
