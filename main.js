@@ -4,11 +4,10 @@ require('dotenv').config()
 
 const https = require('https');
 const env = process.env
+const { API_KEY, CHANNEL_ID } = env;
 
-const API_KEY = '&key=' + env.API_KEY
 const BASE_URL = 'https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet'
-const CHANNEL_ID = '&id=' + env.CHANNEL_ID
-const URL = BASE_URL + CHANNEL_ID + API_KEY
+const URL = BASE_URL + '&id=' + CHANNEL_ID + '&key=' + API_KEY
 
 https.get(URL, (res) => {
     let body = ''
