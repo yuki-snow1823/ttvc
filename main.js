@@ -1,15 +1,23 @@
 #! /usr/bin/env node
 
 require('dotenv').config()
+const queryString = require('query-string')
 
-const https = require('https');
+const https = require('https')
 const env = process.env
-const { API_KEY, CHANNEL_ID } = env;
+const { API_KEY, CHANNEL_ID } = env
 
 const BASE_URL = 'https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet'
-const URL = BASE_URL + '&id=' + CHANNEL_ID + '&key=' + API_KEY
 
-https.get(URL, (res) => {
+const url = queryString.stringifyUrl({
+	url: BASE_URL,
+	query:{
+		id: CHANNEL_ID,
+        key: API_KEY
+	}
+})
+
+https.get(url, (res) => {
     let body = ''
     res.setEncoding('utf8')
     res.on('data', (chunk) => {

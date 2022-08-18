@@ -12,9 +12,9 @@
   "author": "yuki_snow1823",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "query-string": "^7.1.1"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuki-snow1823/ttvc.git"
